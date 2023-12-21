@@ -1,0 +1,99 @@
+/* Default styles */
+
+.query {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  justify-content: space-between;
+}
+
+.query .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.query .newsletter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.query .newsletter h2 {
+  font-weight: 300;
+  font-size: 30px;
+  border-bottom: #171717 0.5px solid;
+  width: 35%;
+}
+
+.query .newsletter p {
+  font-weight: 300;
+  font-size: 18px;
+  color: rgb(238, 87, 97);
+}
+
+.query .newsletter input {
+  width: 70%;
+  padding: 10px 5px 10px 5px;
+  color: rgb(238, 87, 97);
+  border-radius: none;
+}
+
+.query .newsletter button {
+  width: 30%;
+  padding: 10px 5px 10px 5px;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+}
+
+.query .newsletter .links {
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 768px) {
+  .query {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .query .location {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .query .location .locationimage{
+    width: 80%;
+  }
+
+  .query .newsletter {
+    width: 100%;
+  }
+
+  .query .newsletter h2 {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .query .newsletter input {
+    width: 100%;
+  }
+
+  .query .newsletter button {
+    width: 100%;
+  }
+
+  .query .newsletter .links {
+    font-size: 20px;
+  }
+}
+
+/* Add more media queries as needed for different screen sizes */

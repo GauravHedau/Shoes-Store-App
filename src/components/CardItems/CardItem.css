@@ -1,0 +1,106 @@
+
+.cardItem {
+    border: 0.1px solid #e9e6e6;
+    margin: 5px;
+    width: calc(33.33% - 10px); /* Adjust the width for responsiveness */
+    max-width: 360px; /* Set a maximum width */
+    min-width: 280px; /* Set a minimum width */
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .cardItem {
+        width: calc(50% - 10px); /* Adjust the width for smaller screens */
+    }
+}
+
+/* Add a media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .cardItem {
+        width: 100%; /* Set width to 100% for the smallest screens */
+        max-width: none;
+        min-width: none;
+    }
+}
+
+.cardItem:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cardHead .card-head-button {
+  border: none;
+  background-color: rgb(238, 87, 97);
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+.image {
+  height: 50%;
+}
+.image img {
+  width: 100%;
+}
+
+.buyButton {
+  width: 100%;
+  border: 0.1px solid #e9e6e6;
+  background-color: transparent;
+  padding: 8px;
+}
+
+.buyButton:hover {
+  background-color: rgb(230, 166, 171);
+}
+
+.card-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: gray;
+}
+.card-details .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 0.1px solid #a29f9f;
+}
+.card-details .cardText {
+  font-weight: 400;
+  font-size: 20px;
+}
+.card-details .card-price {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(83, 231, 96);
+
+}
+.card-details .itemSize span {
+  font-size: 14px;
+  margin-right: 7px;
+}
+
+
+

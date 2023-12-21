@@ -1,0 +1,51 @@
+/* Base styles for card */
+.cards {
+    font-weight: 300;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.newarrivalsection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head h1 {
+    margin: 30px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.head i {
+    color: rgb(238, 87, 97);
+}
+
+.viewtext {
+    padding-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: fit-content;
+    color: rgb(238, 87, 97);
+    align-self: center;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .head {
+        flex-direction: column; /* Stack elements vertically for smaller screens */
+        text-align: center; /* Center align text and items */
+    }
+
+    .head h1 {
+        margin: 20px 0; /* Adjust margin for smaller screens */
+    }
+}

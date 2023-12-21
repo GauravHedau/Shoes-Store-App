@@ -1,0 +1,77 @@
+/* Base styles for discount panel */
+.discountPanel {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 237, 238);
+}
+
+.disImage {
+  width: 50%;
+  position: relative;
+  margin-left: 100px;
+}
+
+.disImg1,
+.disImg2 {
+  display: inline-block;
+}
+
+.disImage .disImg2 {
+  position: absolute;
+  left: 250px;
+  bottom: 50px;
+}
+
+.disText {
+  width: 50%;
+  margin-left: 10%;
+}
+
+.disText h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.disText p {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+.disText button {
+  padding: 10px;
+  width: 150px;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .discountPanel {
+    flex-direction: column; /* Stack elements vertically for smaller screens */
+    height: auto; /* Adjust height as needed */
+
+  }
+
+  .disImage {
+    width: 100%;
+    margin-left: 0;
+    text-align: center; /* Center the image */
+  }
+
+  .disImage .disImg2 {
+    position: static; /* Remove absolute positioning */
+    margin-top: 20px; /* Add some spacing */
+  }
+
+  .disText {
+    width: 100%;
+    text-align: center; /* Center text */
+    margin-left: 0;
+    margin-top: 20px; /* Add some spacing */
+  }
+}

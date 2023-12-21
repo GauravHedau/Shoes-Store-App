@@ -1,0 +1,30 @@
+.extra {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(248, 237, 238);
+  width: 100%;
+  height: 80px;
+}
+
+.extra div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+/* Responsive font size adjustments */
+@media screen and (max-width: 768px) {
+  .extra div {
+    font-size: 20px; /* Adjust font size for screens up to 768px wide */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .extra div {
+    font-size: 15px; /* Adjust font size for screens up to 480px wide */
+  }
+}

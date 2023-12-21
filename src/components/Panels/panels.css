@@ -1,0 +1,135 @@
+/* Base styles for panel */
+.panel1 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1px solid #e9e6e6;
+}
+
+.panel1 li {
+  text-decoration: none;
+  color: #171717;
+  font-weight: 400;
+  margin: 20px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.panel1 li:hover {
+  cursor: pointer;
+  color: rgb(238, 87, 97);
+}
+
+/* Base styles for image panels */
+.panel2,
+.panel3 {
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+  margin-bottom: 20px; /* Add spacing between panels */
+  display: flex;
+  flex-wrap: wrap; /* Wrap images to the next row on smaller screens */
+  padding: 0px;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+  width: 50%;
+  height: auto; /* Adjust height as needed */
+}
+
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img {
+  width: 100%;
+  height: 100%; /* Maintain image aspect ratio */
+}
+
+/* Base styles for panel 4 */
+.panel4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.panel3Head {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.panel3Head h2 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.panel3Head p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(238, 87, 97);
+  border-bottom: 1px solid;
+  width: fit-content;
+  padding-bottom: 5px;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  align-self: center;
+}
+
+.cardImage .cardImagItem {
+  margin: 20px; /* Adjust margin for spacing between items */
+  width: 50%;
+  text-align: center;
+}
+
+.cardImage .cardImagItem h2 {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.cardImage .cardImagItem p {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgb(238, 87, 97);
+  padding-bottom: 5px;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .panel1 {
+    margin-top: 130px;
+
+    text-align: center; /* Center-align text */
+  }
+
+  .panel1 li {
+    font-size: smaller;
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .panel2,
+  .panel3 {
+    width: 100%;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    width: 100%;
+  }
+
+  .cardImage .cardImagItem {
+    width: 100%;
+  }
+}

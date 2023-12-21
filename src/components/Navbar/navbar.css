@@ -1,0 +1,86 @@
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Stick it to the top of the viewport */
+  width: 100%; /* Make it full-width */
+  background-color: white; /* Add a background color if needed */
+  height: 100px;
+  color: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 300;
+  padding: 20px;
+  font-size: 16px;
+  z-index: 100; /* Ensure it's on top of other content */
+}
+
+.search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.search:hover {
+  cursor: pointer;
+  color: rgb(238, 87, 97);
+}
+
+.logo {
+  width: 200px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navItem {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  align-items: center;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  color: rgb(238, 87, 97);
+}
+
+.navItem .nav-link {
+  padding: 10px;
+}
+
+.navbar i {
+  font-size: 23px;
+  margin-left: 4px;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically for smaller screens */
+    height: auto; /* Adjust height as needed */
+    text-align: center; /* Center align text and items */
+  }
+
+  .search {
+    display: none;
+  }
+
+  .logo {
+    width: 150px; /* Adjust logo size for smaller screens */
+  }
+
+  .navItem {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navItem .nav-link {
+    padding: 10px;
+    margin-right: 10px; /* Add spacing between links */
+  }
+}
